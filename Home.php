@@ -15,7 +15,7 @@
     <div id="main-head" class="text-center carousel slide" style="color:whitesmoke;" data-ride="carousel">
 		
 		  <!-- Indicators -->
-  <ul class="carousel-indicators">
+  <!--ul class="carousel-indicators">
     <li data-target="#main-head" data-slide-to="0" class="active"></li>
     <li data-target="#main-head" data-slide-to="1"></li>
     <li data-target="#main-head" data-slide-to="2"></li>
@@ -28,10 +28,13 @@
 	  <li data-target="#main-head" data-slide-to="9"></li>
 	  <li data-target="#main-head" data-slide-to="10"></li>
 	  
-  </ul>
+  </ul-->
 
   <!-- The slideshow -->
-  <div class="carousel-inner bg-dark">
+  <div class="carousel-inner">
+	  <div class="overlay" >
+	  <p>The Place for CIMA in Sri Lanka
+		  </p></div>
     <div class="carousel-item active" >
       <img src="images/1.JPG"  class="img-fluid" alt="Fastrack">
     </div>
