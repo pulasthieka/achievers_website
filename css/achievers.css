@@ -5,10 +5,23 @@
 }
 body{
 	overflow-x: hidden;
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.main_pic{
-	background: #ec2026 url(../images/hero_image.jpg) no-repeat center;
+/*######################## navbar ##########################*/
+nav {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000 !important;
 }
+/*####################carousel######################################*/
+
 .overlay{
 	position: absolute; 
     width: 100%; 
@@ -33,17 +46,28 @@ body{
 .carousel-control-prev, .carousel-control-next{
 	z-index: 10;
 }
-#main-head .carousel-inner{
+#main-head .carousel-inner, footer{
 	background: #FF0000;
+	width: calc(100% + 30px);
+	position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%);
+	transform: translate(-50%);
+	z-index: 2;
 }
 #main-head .carousel-item {
 	mix-blend-mode:darken;
+}
+#main-head{
+	padding-top: 70px;
 }
 .bigger-img{
 	display: flex;
     justify-content: center;
     overflow: hidden;
 }
+
+/*####################buttons and links#########################*/
 .btn-primary{
 	background-color: #ec2026;
 	 border-color:#ec2026;
@@ -53,13 +77,30 @@ body{
   background-color: #ff0000;
   border-color: #ff0000;
 }
-.card-link, a{
+ a{
 	color: #ec2026;
 	}
-.card-link:hover, a:hover{
+a:hover{
 	color: #ff0000;
 	text-decoration: underline;
 }
+.card-link{
+	position: absolute;
+	bottom:0;
+	
+}
+ /* .card-footer a{
+	 text-align: center;
+	 
+	 color: #fff;
+}
+ .card-footer:hover{
+	 background: #ff0000;
+}
+.card-footer a:hover{
+	color: #fff;
+	text-decoration: underline;
+} */
 .btn-link{
 	color: inherit;
 	font-size: inherit;
@@ -79,7 +120,7 @@ td p{
 	   margin: auto;
           }
 
-@media (max-width: 512px) {
+@media (max-width: 768px) {
 	.mobile-hide{
 		display: none;
 	}
