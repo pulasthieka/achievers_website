@@ -33,7 +33,7 @@ body{
 .carousel-control-prev, .carousel-control-next{
 	z-index: 10;
 }
-.carousel-inner{
+#main-head .carousel-inner{
 	background: #FF0000;
 }
 .bigger-img{
