@@ -9,7 +9,9 @@
 <?php include_once("head.php")?>
   </head>
   <body>
+	 
     <?php include_once("navbar.php") ?>
+	  
 <!--Navbar over -->
 	  
     <div id="main-head" class="text-center carousel slide" style="color:whitesmoke;" data-ride="carousel">
@@ -75,42 +77,43 @@
     <span class="carousel-control-next-icon"></span>
   </a>	
 	  </div>
-    <div class="container">
+    <div class="container" id="courses">
 		 <div class="row">
-   <div class="col-md-3 d-flex" id="CIMA">
+   <div class="col-md-3 d-flex col-sm-6" id="CIMA">
 	   <div class="card flex-fill">
                 <div class="card-body">
 				<div class="card-img-top"><a href="CIMA.php"><img src="images/Courses/cima.jpg" class="img-fluid"></a></div>
                   
                   <h6 class="card-subtitle mb-2 text-muted">Chartered Institute of Management Accountants</h6>
                   <p class="card-text mobile-hide">CIMA is the world's largest professional body of management accountants </p>
-                  <a href="CIMA.php" class="card-link">Study CIMA</a>
-				<a href="https://www.cimaglobal.com/" class="card-link weblink">Visit&nbsp;Website</a>
+					<a href="CIMA.php" class="card-link">Study CIMA</a>
+					<!--a href="https://www.cimaglobal.com/" class="card-link weblink">Visit&nbsp;Website</a-->
                   </div>
     		</div>
 	</div>
-	<div class="col-md-3 " id="ACCA">
+	<div class="col-md-3 d-flex col-sm-6" id="ACCA">
              <div class="card">
                 <div class="card-body">
                   <div class="card-img-top"><a href="ACCA.php"><img src="images/Courses/acca.png" class="img-fluid"></a></div>
                   <h6 class="card-subtitle mb-2 text-muted"> Association of Chartered Certified Accountants</h6>
                   <p class="card-text mobile-hide">All over the world, employers seek out ACCA members to lead their business to sustainable success. </p>
-                  <a href="ACCA.php" class="card-link">Study ACCA</a> 
-					<a href="http://www.accaglobal.com/gb/en.html" class="card-link weblink">Visit&nbsp;Website</a>
+						<a href="ACCA.php" class="card-link">Study ACCA</a> 
+					<!--a href="http://www.accaglobal.com/gb/en.html" class="card-link weblink">Visit&nbsp;Website</a-->
     		</div>
+				 
 		</div></div>
-	<div class="col-md-3 d-flex" id="CISI">
+	<div class="col-md-3 d-flex col-sm-6" id="CISI">
              <div class="card flex-fill">
                 <div class="card-body">
                    <div class="card-img-top"><a href="CISI.php"><img src="images/Courses/cisi.png" class="img-fluid"></a></div>
                    <h6 class="card-subtitle mb-2 text-muted">Chartered Institute for Securities &amp; Investment</h6>
                    <p class="mobile-hide card-text">The professional body of choice for the financial services sector.</p>
                    <a href="CISI.php" class="card-link">Study CISI</a>
-                   <a href="https://www.cisi.org/cisiweb2" class="card-link weblink">Visit&nbsp;Website</a>
+                   <!--a href="https://www.cisi.org/cisiweb2" class="card-link weblink">Visit&nbsp;Website</a-->
     		</div>
 		</div>
 			 </div>
-	<div class="col-md-3 d-flex" id="Logistics">
+	<div class="col-md-3 d-flex col-sm-6" id="Logistics">
              <div class="card">
                 <div class="card-body">
                 <div class="card-img-top"><a href="Logistics.php"><img src="images/Courses/LIT.jpg" class="img-fluid"></a></div>
@@ -139,20 +142,15 @@
 			 <div class="col-md-9">
 				 <div class="card-body">
 			 <h3> Welcome to Achievers Lanka Business School.</h3><br>
-					 <p class="text-justify">
-From humble beginnings in 2006, Achievers is now a leading institute in Sri Lanka with an annual student intake of 6,000 offering quality professional education. Initially commencing with the CIMA Professional Qualification we now offer tuition Logistics and International Trade programmes. </p> 
-					 <p class="text-justify mobile-hide">
-Our continuous success is largely built on the versatility of our lecturers, sound knowledge of the subject
-matter and excellent delivery skills. We have been able to consistently secure prizes at the CIMA examinations due to the quality of lecturing and the commitment of our lecture panel. At Achievers all
-our lecturers share the same dedication, passion and commitment to excel in the chosen field and this is exactly what makes a Business School stand out from others.</p> 
-					 <p class="text-justify mobile-hide">
+					
+					 <p class="text-justify ">
 At Achievers we go beyond providing a mere qualification for our students. Our vision is to equip our
 students with the necessary skills to excel in the corporate world in addition to success at the exams. To facilitate our vision, we have implemented various programmes to develop the personal, interpersonal and entrepreneurial skills of our students. This differentiates our students from the rest and gives them a competitive advantage.</p> 
-					 <p class="text-justify">
+					 <p class="text-center blockquote">
 Achievers is truly the place where “the good becomes great”. We welcome you to explore the limitless
 opportunities available at Achievers.
 </p>
-				 <a href="About.php" class="card-link ">Learn more</a>
+				 <a href="About.php" class="card-link ">More About Achievers</a>
 			 </div>
 			 </div>
 		</div>
