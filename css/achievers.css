@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+    --achievers-red: #ec2026; 
+}
+body{
+	overflow-x: hidden;
+}
+.main_pic{
+	background: #ec2026 url(../images/hero_image.jpg) no-repeat center;
+}
+.bigger-img{
+	display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.btn-primary{
+	background-color: #ec2026;
+	 border-color:#ec2026;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.card-link, a{
+	color: #ec2026;
+	}
+.card-link:hover, a:hover{
+	color: #ff0000;
+	text-decoration: underline;
+}
+.btn-link{
+	color: inherit;
+	font-size: inherit;
+}
+.btn-link:hover{
+	color: #ec2026;
+	text-decoration: none;
+}
+td p{
+	margin-bottom: 0;
+}
+ .carousel-item {
+	 overflow: hidden;}
+
+   .carousel-item .img-fluid {
+            max-width: 100%;
+	   margin: auto;
+          }
+
+@media (max-width: 512px) {
+	.mobile-hide{
+		display: none;
+	}
+	.card-body .card-body {
+		padding: 0;
+		margin: 0;
+	}
+	.carousel-item .img-fluid {
+		height: 60vh;
+            max-width: none;
+		 left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+          }
+}
+@media (min-width:1200px){
+	.weblink{
+		float: right;
+	}
+}
