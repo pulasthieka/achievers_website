@@ -21,10 +21,9 @@ nav {
 	z-index: 1000 !important;
 }
 @media screen and (max-width:768px){
-	#navbarSupportedContent{
-		height: 100vh;
+	.navbar-collapse{
+		height: 100vh !important;
 		text-align: center;
-		transition: 500ms ease ;
 	}
 }
 /*####################carousel######################################*/
@@ -53,9 +52,12 @@ nav {
 .carousel-control-prev, .carousel-control-next{
 	z-index: 10;
 }
-#main-head .carousel-inner, footer{
-	background: #FF0000;
-	width: calc(100% + 30px);
+.carousel{
+	width:100%;
+}
+#main-head .carousel-inner{
+	background: #ec2026;
+	width: 100%;
 	position: relative;
     left: 50%;
     -ms-transform: translate(-50%);
@@ -116,12 +118,9 @@ a:hover{
 	color: #ec2026;
 	text-decoration: none;
 }
-td p{
-	margin-bottom: 0;
-}
  .carousel-item {
-	 overflow: hidden;}
-
+	 overflow: hidden;
+}
    .carousel-item .img-fluid {
             max-width: 100%;
 	   margin: auto;
@@ -152,7 +151,93 @@ td p{
     left: 20px;
 }
 
+/*######################tables########################*/
+td p{
+	margin-bottom: 0;
+}
+.table th, .table td {
+	padding: 0.1rem;
+}
 
+/*##################CIMA page#######################*/
+@media screen and (max-width:768px){
+#timetables .list-group{
+	display: flex;
+	flex-direction: row;
+  flex-wrap: nowrap;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+}
+
+ #timetables .list-group-item {
+    flex: 0 0 auto;
+	 width: 80%;
+  }
+}
+/*##############MODAL################### */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-image {
+    display: block;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+    height: 80vh;
+}
+
+/* Add Animation 
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+*/
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*##############MODAL################### */
 @media (max-width: 768px) {
 	.mobile-hide{
 		display: none;
@@ -175,4 +260,19 @@ td p{
 	.weblink{
 		float: right;
 	}
+}
+@media (max-width: 576px) {
+	.xs-hide{
+		display: none;
+	}
+}
+@media screen and (max-width:348px){
+	.navbar-toggler{
+		padding: 0.25rem 0.15rem;
+	}
+	.navbar-toggler-icon{
+		    width: 0.9em;
+    height: 0.9em;
+	}
+	
 }

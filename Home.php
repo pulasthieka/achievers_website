@@ -13,8 +13,8 @@
     <?php include_once("navbar.php") ?>
 	  
 <!--Navbar over -->
-	  
-    <div id="main-head" class="text-center carousel slide" style="color:whitesmoke;" data-ride="carousel">
+   <div class="row text-center">
+	  <div id="main-head" class="carousel slide" style="color:whitesmoke;" data-ride="carousel">
 		
 		  <!-- Indicators -->
   <!--ul class="carousel-indicators">
@@ -77,6 +77,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>	
 	  </div>
+	 </div> 
     <div class="container" id="courses">
 		 <div class="row">
    <div class="col-md-3 d-flex col-sm-6" id="CIMA">
@@ -155,20 +156,13 @@ opportunities available at Achievers.
 			 </div>
 		</div>
 		<br><br>
-		<div class="row">
-		<div class="active">
-			
-			</div>
-		</div>
 		
 	  </div>
-	   <div class="row">
-		  <div class="col-md-12 ">
-		  <div class="d-flex justify-content-around flex-row">
-		  <div><img src="images/logos/CIMA_Short_Premium-Learning-Partner-2018.png" width="100%" style="vertical-align: middle"></div>
-		  <div><img src="images/logos/cbe-exam-center.png" width="100%" style="vertical-align: middle"></div>  
-		  <div><img src="images/logos/pearson-vue-logo_500x300.png" width="100%"></div>
-		  </div></div></div><br>
+	  
+	   <div class="container-fluid xs-hide">
+		   <img class="img-fluid" src="images/Logobar.png">
+		   <br>
+		  </div>
 		  
 <?php include_once("footer.php")?>
   </body>

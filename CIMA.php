@@ -12,7 +12,7 @@
   <body>
     <?php include_once("navbar.php") ?>
 <!--Navbar finishes -->
-	  <div class="container">
+	  <div id="main-head" class="container">
 <div class="row">
 		  <div class="col-md-3">
 	<img class="card-img-top" src="images/Courses/cima.jpg" width="80%">
@@ -26,33 +26,89 @@
 					<li class="list-group-item"><a href="#gateway">Masters Gateway Assesment</a></li>
 					                </ul>
 				 </div>
-			  <div class="card">
+			  <div id="timetables" class="card">
 				  <div class="card-header"> Timetables</div>
-				  <ul class="list-group list-group-flush">
-					  <li class="list-group-item"> <a href="images/ops.png"><img class="img-fluid" src="images/ops.png"></a></li>
-					 <li class="list-group-item"> <a href="images/man.png"><img class="img-fluid" src="images/man.png"></a></li>
-						  <li class="list-group-item"> <a href="images/strat.png"><img class="img-fluid" src="images/strat.png"></a></li>
-				  </ul>
+				  <div class="list-group list-group-flush">
+					  <div class="list-group-item"> <img id="timetable1" class="img-fluid" src="images/ops.png"></div>
+					 <div class="list-group-item"><img id="timetable2" class="img-fluid timetables" src="images/man.png"></div>
+						  <div class="list-group-item"> <img id="timetable3" class="img-fluid timetables" src="images/strat.png"></div>
+				  </div>
+				 
 			  </div>
+			  <!-- timetable modals -->
+			  <div id="timetableM" class="modal fade">
+  <span class="close">&times;</span>
+  <img class="modal-image" id="img01">
+  <div id="caption"></div>
+</div>
+			  <script>
+// Get the modal
+var modal = document.getElementById('timetableM');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById('timetable1');
+var img2 = document.getElementById('timetable2');
+var img3 = document.getElementById('timetable3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img1.onclick = function(){
+    modal.style.display = "block";
+	modal.classList.add("show");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+    modal.style.display = "block";
+	modal.classList.add("show");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img3.onclick = function(){
+    modal.style.display = "block";
+	modal.classList.add("show");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+	modal.classList.remove("show");
+}	
+	window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+		modal.classList.remove("show");
+		
+    }
+}
+
+</script>
+
+			  
 	</div>
 	<div class="col-md-9"><br>
-		<p class="text-justify">CIMA Syllabus is shaped by extensive research conducted among top corporates in the world.
-									In addition to the rigorous knowledge in Accountancy and Finance, CIMA study systems inculcate knowledge on Decision-Making and Enterprise Management, which are considered as most important Skills.
-									CIMA Graduates are well-rounded champions who are sought after by top corporates.
-									The Employability of a CIMA Graduate is 100%.</p>
-									
-			<img src="images/cima1.jpg" alt="achievement" class="img-fluid">
-		<h5>Why CIMA?</strong></h5>
+		<p class="text-justify">
+CIMA is the world's largest professional body of management accountants offering the most relevant finance qualification for business.
+		</p>
+		
+			<div class="row">
+				<div class="col-md-4"><h5>Why CIMA?</strong></h5>
 									<ul>
 									<li>A professional qualification in Management Accounting</li>
 									<li>A globally recognized qualification awarded by CIMA UK</li>
 									<li>A passport that opens many corporate doors</li>
 									<li>A qualification that empowers people to work in many organizations and hold various roles</li>
 									</ul>
-		<p class="text-justify">
-CIMA is the world's largest professional body of management accountants offering the most relevant finance qualification for business.
-		</p><p class="text-justify">
+				<p class="text-justify">
 CIMA's focus on management functions makes it unique, and it is internationally recognised as offering the financial qualification for business. CIMA prides itself on the commercial relevance of its syllabus, which is continually enhanced to reflect the latest business developments.</p>
+				</div>
+			<div class="col-md-8"><img src="images/cima1.jpg" alt="achievement" class="img-fluid"></div>
+		
+	</div>	
+		
 	
 		
 		<div id="read_more" class="collapse">	
@@ -80,7 +136,7 @@ The qualification is having four levels; twelve Objective Tests, and three Case 
 	</div>
 		  </div>
 		<div class="row">
-		  <div id="accordion1" class="container">
+		  <div id="accordion1" class="col-md-9">
   <div class="container">
     <div class="row" id="headingOne">
       
@@ -749,7 +805,7 @@ The qualification is having four levels; twelve Objective Tests, and three Case 
 		  </div>
 		  </div>  <div class="container">  
   <div class="row  text-center ">
-	  <div class="col-md-12  text-center">
+	  <div class="col-md-9  text-center">
 				<h3>Meet Your Lecture Panel</h3>
 				<h6 class="text-muted">A panel of maestros with over 100 years of combined experience </h6>
 			</div>

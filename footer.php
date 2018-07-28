@@ -1,8 +1,9 @@
-	  <footer>
-		 
-	  <div class="bg-dark"><br><div class="container">
-		  <div class="row">
+	  <footer class="footer"> 
+	  
+		  <div class="row bg-dark">
+			  
 		  <div class="col-md-6" style="color: whitesmoke">
+			  <br>
 		  <h3>What our students say</h3>
 			  <div id="testomonials" class="carousel slide" data-ride="carousel">
 			  <!--ul class="carousel-indicators">
@@ -40,13 +41,14 @@
 		  </div>
 		
 	    <div class="col-md-6 " style="color: whitesmoke">
+			<br>
 	      <h5>Contact Us</h5>
 	      
 	      <p class="small">Achievers Lanka Business School (Pvt) Ltd <br>
 	      39, Bullers Road, Colombo 4. Sri Lanka. <br>
 	      Hotline : +94 117590000 / +94 115288700 / +94 115288900<br>
 	      <a>info@achievers.lk</a></p>
-	    </div></div></div>
-	  <div class="row text-center" style="color: whitesmoke"><div class="col-md-12"> <p class="small">&copy; Achievers Lanka Business School (Pvt) Ltd.</p></div></div></div>
+	    </div></div>
+	  <div class="row text-center" style="color: whitesmoke; background: #ec2026;"><div class="col-md-12"> <p class="small" id="copywrite">&copy; Achievers Lanka Business School (Pvt) Ltd.</p></div></div>
 	</footer>
    
