@@ -17,7 +17,7 @@
 	  <div id="main-head" class="carousel slide" style="color:whitesmoke;" data-ride="carousel">
 		
 		  <!-- Indicators -->
-  <!--ul class="carousel-indicators">
+  <ul class="carousel-indicators">
     <li data-target="#main-head" data-slide-to="0" class="active"></li>
     <li data-target="#main-head" data-slide-to="1"></li>
     <li data-target="#main-head" data-slide-to="2"></li>
@@ -30,18 +30,18 @@
 	  <li data-target="#main-head" data-slide-to="9"></li>
 	  
 	  
-  </ul-->
+  </ul>
 
   <!-- The slideshow -->
   <div class="carousel-inner">
 	  <div class="overlay" >
 	  <p>The Place for CIMA in Sri Lanka
 		  </p></div>
+	  <div class="carousel-item">
+      <img src="images/2.JPG"  class="img-fluid" alt="Leaders">
+    </div>
     <div class="carousel-item active" >
       <img src="images/1.JPG"  class="img-fluid" alt="Fastrack">
-    </div>
-    <div class="carousel-item">
-      <img src="images/2.JPG"  class="img-fluid" alt="Leaders">
     </div>
     <div class="carousel-item">
       <img src="images/students_council.jpg" alt="Students Council" class="img-fluid">
@@ -79,48 +79,49 @@
 	  </div>
 	 </div> 
     <div class="container" id="courses">
-		 <div class="row">
+		 <div class="row" style="padding-top: 1em;">
+			 
    <div class="col-md-3 d-flex col-sm-6" id="CIMA">
-	   <div class="card flex-fill">
+	   <div class="card flex-fill" style="border-color: #663399;">
                 <div class="card-body">
 				<div class="card-img-top"><a href="CIMA.php"><img src="images/Courses/cima.jpg" class="img-fluid"></a></div>
                   
                   <h6 class="card-subtitle mb-2 text-muted">Chartered Institute of Management Accountants</h6>
                   <p class="card-text mobile-hide">CIMA is the world's largest professional body of management accountants </p>
-					<a href="CIMA.php" class="card-link">Study CIMA</a>
+					<a href="CIMA.php" class="card-link" style="color:#663399; ">Study CIMA</a>
 					<!--a href="https://www.cimaglobal.com/" class="card-link weblink">Visit&nbsp;Website</a-->
                   </div>
     		</div>
 	</div>
 	<div class="col-md-3 d-flex col-sm-6" id="ACCA">
-             <div class="card">
+             <div class="card" style="border-color: #cc3300;">
                 <div class="card-body">
                   <div class="card-img-top"><a href="ACCA.php"><img src="images/Courses/acca.png" class="img-fluid"></a></div>
                   <h6 class="card-subtitle mb-2 text-muted"> Association of Chartered Certified Accountants</h6>
                   <p class="card-text mobile-hide">All over the world, employers seek out ACCA members to lead their business to sustainable success. </p>
-						<a href="ACCA.php" class="card-link">Study ACCA</a> 
+						<a href="ACCA.php" class="card-link" style="color:#cc3300;">Study ACCA</a> 
 					<!--a href="http://www.accaglobal.com/gb/en.html" class="card-link weblink">Visit&nbsp;Website</a-->
     		</div>
 				 
 		</div></div>
 	<div class="col-md-3 d-flex col-sm-6" id="CISI">
-             <div class="card flex-fill">
+             <div class="card flex-fill" style="border-color:#006666;">
                 <div class="card-body">
                    <div class="card-img-top"><a href="CISI.php"><img src="images/Courses/cisi.png" class="img-fluid"></a></div>
                    <h6 class="card-subtitle mb-2 text-muted">Chartered Institute for Securities &amp; Investment</h6>
                    <p class="mobile-hide card-text">The professional body of choice for the financial services sector.</p>
-                   <a href="CISI.php" class="card-link">Study CISI</a>
+                   <a href="CISI.php" class="card-link" style="color:#006666;">Study CISI</a>
                    <!--a href="https://www.cisi.org/cisiweb2" class="card-link weblink">Visit&nbsp;Website</a-->
     		</div>
 		</div>
 			 </div>
 	<div class="col-md-3 d-flex col-sm-6" id="Logistics">
-             <div class="card">
+             <div class="card" style="border-color:#006699;">
                 <div class="card-body">
                 <div class="card-img-top"><a href="Logistics.php"><img src="images/Courses/LIT.jpg" class="img-fluid"></a></div>
                    <h6 class="card-subtitle mb-2 text-muted">Logistics</h6>
                    <p class="card-text mobile-hide">Study certified Logistics courses at Achievers</p>
-                   <a href="Logistics.php" class="card-link">Study Logistics</a>
+                   <a href="Logistics.php" class="card-link" style="color:#006699;">Study Logistics</a>
                    
                 </div>
     		</div>
