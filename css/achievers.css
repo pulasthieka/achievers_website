@@ -3,6 +3,10 @@
 :root {
     --achievers-red: #ec2026; 
 }
+@font-face{
+	font-family: FontAwesome;
+	src: url(../fonts/FontAwesome.otf);
+}
 body{
 	overflow-x: hidden;
 	width: 100%;
@@ -11,6 +15,16 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+@media screen and (max-width:568px){
+	body{padding:0 10px 0 10px}
+	.container{padding: 0px!important;}
+}
+@media screen and (min-width:768px){
+	#change-sidebar{
+		flex-direction: row-reverse;
+	}
+}
+
 /*######################## navbar ##########################*/
 nav {
 	position: fixed !important;
@@ -41,7 +55,7 @@ nav {
 }
 .overlay p{
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 8vw;
 	line-height: 1;
 	width: 90%;
 	font-weight: 700;
@@ -65,9 +79,11 @@ nav {
     -ms-transform: translate(-50%);
 	transform: translate(-50%);
 	z-index: 2;
+	box-shadow: 0 5px 15px rgb(0,0,0,0.4);
 }
 #main-head .carousel-item {
-	mix-blend-mode:darken;
+	mix-blend-mode:multiply;
+	opacity: 1;
 }
 #main-head{
 	padding-top: 70px;
@@ -79,6 +95,9 @@ nav {
 }
 #CIMA,#ACCA,#CISI,#Logistics{
 	padding-bottom: 20px;
+}
+#CIMA .card:hover,#ACCA .card:hover,#CISI .card:hover,#Logistics .card:hover{
+	box-shadow: 0 2px 10px rgb(0,66,99,0.6);
 }
 
 /*####################buttons and links#########################*/
@@ -168,8 +187,8 @@ td p{
 }
 
 /*##################CIMA page#######################*/
-@media screen and (max-width:768px){
-#timetables .list-group{
+ #cimalevels .list-group{
+	width:100vw;
 	display: flex;
 	flex-direction: row;
   flex-wrap: nowrap;
@@ -177,11 +196,48 @@ td p{
 	overflow-x: auto;
 }
 
- #timetables .list-group-item {
+  #cimalevels .list-group-item {
+    flex: 0 0 auto;
+	 width: 25vw;
+  }
+#main-head .btn-link{
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align: left;
+	background: #ec2026;
+	color: #fff;
+}
+#main-head .btn-link::after{
+	content: "\f056"; 
+	font-family: "FontAwesome";
+	font-size: 1.2em;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+#main-head .collapsed::after{
+	content: "\f055";/* Unicode character for "plus" sign (+) */
+	font-family: "FontAwesome"
+    
+}
+
+@media screen and (max-width:768px){
+#timetables .list-group, #cimalevels .list-group{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+  flex-wrap: nowrap;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+}
+
+ #timetables .list-group-item, #cimalevels .list-group-item {
     flex: 0 0 auto;
 	 width: 80%;
   }
 }
+
 
 /*##############MODAL################### */
 
@@ -200,7 +256,7 @@ td p{
     left: 50%;
     -ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-    height: 80vh;
+    width:90%;
 }
 
 /* Add Animation 
@@ -227,9 +283,8 @@ td p{
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
     transition: 0.3s;
+	z-index: 10;
 }
 
 .close:hover,
@@ -254,6 +309,12 @@ td p{
 	.card-body .card-body {
 		padding: 0;
 		margin: 0;
+	}
+	.card-link{
+    left: 50%;
+    -ms-transform: translate(-50%);
+	transform: translate(-50%);
+		text-decoration: none;
 	}
 	.carousel-item .img-fluid {
 		height: 60vh;

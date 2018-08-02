@@ -12,32 +12,10 @@
       <?php include_once("navbar.php") ?>
 <!--Navbar finishes -->
 	  
-	   <div class="container">
-<div class="row">
-		  <div class="col-md-3">
-	<img class="card-img-top" src="images/Courses/acca.png" width="80%">
-			   <div class="card">
-					  <div class="card-header"> Content</div>
-                <ul class="list-group list-group-flush">
-                  			 		<li class="list-group-item"><a href="#f1">F1 Accountant in Business</a></li>
-									<li class="list-group-item"><a href="#f2">F2 Managament Accounting </a></li>
-									<li class="list-group-item"><a href="#f3">F3 Financial Accounting</a></li>
-									<li class="list-group-item"><a href="#f4">F4 Corporate Law</a></li>
-									<li class="list-group-item"><a href="#f5">F5 Performance Management</a></li>
-									<li class="list-group-item"><a href="#f6">F6 Taxation</a></li>
-									<li class="list-group-item"><a href="#f7">F7 Financial Reporting</a></li>
-									<li class="list-group-item"><a href="#f8">F8 Audit and Assuarance</a></li>
-									<li class="list-group-item"><a href="#f9">F9 Financial Management</a></li>
-									<li class="list-group-item"><a href="#sbl"> SBL Strategic Busines Leader</a></li>
-									<li class="list-group-item"><a href="#sbr"> SBR Strategic Business Reporting</a></li>
-									<li class="list-group-item"><a href="#p4">P4 Advanced Financial Management</a></li>
-									<li class="list-group-item"><a href="#p5">P5 Advanced Performance Management</a></li>
-									<li class="list-group-item"><a href="#p6">P6 Advanced Taxation</a></li>
-									<li class="list-group-item"><a href="#p7">P7 Advanced Audit and Assuarance</a></li>
-										                </ul>
-				 </div>
-			 	</div>
-	<div class="col-md-9"><br>
+	   <div id="main-head" class="container">
+<div class="row" id="change-sidebar">
+	<div  class="col-md-9">
+		<br>
 		<div id="textdescription" class="card-body">
 			<p class="text-justify">		
 								ACCA is a professional accountancy qualification recognized in more than 170 countries. On your pathway to completing ACCA you will gain a number of different qualifications, including a Bsc.(Hons) Degree from the prestigious Oxford Brookes University in the UK. ACCA is a global qualification preferred by employers, educational institutes, and governments all over the world. The competitive job market constantly requires competent finance professionals, consequently increasing the worldwide demand for ACCA qualified individuals. The ACCA professional qualification enables you to become a Chartered Certified Accountant and use the designation &lsquo;ACCA&rsquo; after your name. It prepares you to work in the fields of audit, taxation, financial accounting, management accounting and various other diversified areas.</p>
@@ -53,8 +31,8 @@
   <div class="card">
     <div id="f1">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse1">
-          F1 Accountant in Business
+        <button class="btn btn-link collapsed " data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse1">
+          F1 Accountant in Business <span style="content: \f056; font-family: 'FontAwesome'; color: #fff;"></span>
         </button>
       </h6>
     </div>
@@ -122,7 +100,7 @@
   <div class="card">
     <div id="f2">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse1">
           F2 Managament Accounting
         </button>
       </h6>
@@ -174,7 +152,7 @@
 <div class="card">
     <div id="f3">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed " data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse1">
         F3 Financial Accounting
         </button>
       </h6>
@@ -246,7 +224,7 @@
 				<div class="card">
     <div id="f4">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse1">
         F4 Corporate and Business Law
         </button>
       </h6>
@@ -304,7 +282,7 @@
 				<div class="card">
     <div id="f5">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse1">
         F5 Performance Management
         </button>
       </h6>
@@ -355,7 +333,7 @@
 				<div class="card">
     <div id="f6">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse1">
          F6 Taxation
         </button>
       </h6>
@@ -419,7 +397,7 @@
 				<div class="card">
     <div id="f7">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse1">
           F7 Financial Reporting
         </button>
       </h6>
@@ -467,7 +445,7 @@
 				<div class="card">
     <div id="f8">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse1">
           F8 Audit and Assurance
         </button>
       </h6>
@@ -525,7 +503,7 @@
 				<div class="card">
     <div id="f9">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse1">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse1">
          F9 Financial Management
         </button>
       </h6>
@@ -593,7 +571,7 @@
   <div class="card">
     <div id="sbl">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse21" aria-expanded="true" aria-controls="collapse2">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21" aria-expanded="true" aria-controls="collapse2">
           SBL Strategic Business Leader
         </button>
       </h6>
@@ -672,7 +650,7 @@
 			<div class="card">
     <div id="sbr">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse22" aria-expanded="true" aria-controls="collapse2">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" aria-controls="collapse2">
          SBR Strategic Business Reporting
         </button>
       </h6>
@@ -731,7 +709,7 @@
   <div class="card">
     <div id="p4">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse31" aria-expanded="true" aria-controls="collapse3">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse31" aria-expanded="true" aria-controls="collapse3">
           P4 Advanced Financial Management
         </button>
       </h6>
@@ -780,7 +758,7 @@
 			<div class="card">
     <div id="p5">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse32" aria-expanded="true" aria-controls="collapse3">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse32" aria-expanded="true" aria-controls="collapse3">
          P5 Advanced Performance Management
         </button>
       </h6>
@@ -830,7 +808,7 @@
 		<div class="card">
     <div id="p6">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse33" aria-expanded="true" aria-controls="collapse3">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse33" aria-expanded="true" aria-controls="collapse3">
         P6 Advanced Taxation
         </button>
       </h6>
@@ -878,7 +856,7 @@
 		<div class="card">
     <div id="p7">
       <h6>
-        <button class="btn btn-link " data-toggle="collapse" data-target="#collapse34" aria-expanded="true" aria-controls="collapse3">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse34" aria-expanded="true" aria-controls="collapse3">
          P7 Advanced Audit and Assurance
         </button>
       </h6>
@@ -944,6 +922,30 @@
 	
 		
 	</div>
+		  <div class="col-md-3">
+	<img class="card-img-top" src="images/Courses/acca.png" width="80%">
+			   <div class="card">
+					  <div class="card-header"> Content</div>
+                <ul class="list-group list-group-flush">
+                  			 		<li class="list-group-item"><a href="#f1">F1 Accountant in Business</a></li>
+									<li class="list-group-item"><a href="#f2">F2 Managament Accounting </a></li>
+									<li class="list-group-item"><a href="#f3">F3 Financial Accounting</a></li>
+									<li class="list-group-item"><a href="#f4">F4 Corporate Law</a></li>
+									<li class="list-group-item"><a href="#f5">F5 Performance Management</a></li>
+									<li class="list-group-item"><a href="#f6">F6 Taxation</a></li>
+									<li class="list-group-item"><a href="#f7">F7 Financial Reporting</a></li>
+									<li class="list-group-item"><a href="#f8">F8 Audit and Assuarance</a></li>
+									<li class="list-group-item"><a href="#f9">F9 Financial Management</a></li>
+									<li class="list-group-item"><a href="#sbl"> SBL Strategic Busines Leader</a></li>
+									<li class="list-group-item"><a href="#sbr"> SBR Strategic Business Reporting</a></li>
+									<li class="list-group-item"><a href="#p4">P4 Advanced Financial Management</a></li>
+									<li class="list-group-item"><a href="#p5">P5 Advanced Performance Management</a></li>
+									<li class="list-group-item"><a href="#p6">P6 Advanced Taxation</a></li>
+									<li class="list-group-item"><a href="#p7">P7 Advanced Audit and Assuarance</a></li>
+										                </ul>
+				 </div>
+			 	</div>
+	
 		
 	</div>
 		  </div>

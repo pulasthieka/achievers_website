@@ -37,10 +37,10 @@
 	  <div class="overlay" >
 	  <p>The Place for CIMA in Sri Lanka
 		  </p></div>
-	  <div class="carousel-item">
+	  <div class="carousel-item active">
       <img src="images/2.JPG"  class="img-fluid" alt="Leaders">
     </div>
-    <div class="carousel-item active" >
+    <div class="carousel-item" >
       <img src="images/1.JPG"  class="img-fluid" alt="Fastrack">
     </div>
     <div class="carousel-item">
@@ -127,19 +127,17 @@
     		</div>
 		</div>
 			 </div>
-	<br>
-		<br>
+	
 		 <div class="row">
 			 <div class="col-md-3">
 				 <div class="card">
 					  <div class="card-header"> Ongoing Courses</div>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush" style="padding-bottom:10px;">
                    <li class="list-group-item"> August OCS 2018</li>
                    <li class="list-group-item">August MCS 2018</li>
                    <li class="list-group-item">August SCS 2018</li>
                 </ul>
-				 </div>
-				 <div class="card-body text-center"><a href="http://www.achieverslk.com/" class="btn btn-primary">Register</a></div>
+				 <a style="width: 100%;" href="http://www.achieverslk.com/" class="btn btn-primary">Register</a></div>
 			 </div>
 			 <div class="col-md-9">
 				 <div class="card-body">
@@ -156,11 +154,11 @@ opportunities available at Achievers.
 			 </div>
 			 </div>
 		</div>
-		<br><br>
+		
 		
 	  </div>
 	  
-	   <div class="container-fluid xs-hide">
+	   <div class="container-fluid xs-hide" style="padding: 20px 0;">
 		   <img class="img-fluid" src="images/Logobar.png">
 		   <br>
 		  </div>
